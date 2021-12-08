@@ -1,0 +1,210 @@
+Main.java
+
+package sample;
+
+
+import sample.model.Cavalos;
+import sample.model.Livros;
+import sample.model.Sorvete;
+
+public class Main {
+
+
+
+   public static void main(String[] args){
+       System.out.println("vou tomar sorvete");
+       Sorvete sorvete1 = new Sorvete();
+       sorvete1.setNome("Neve de Cambirela");
+       sorvete1.setSabor("Flocos");
+       sorvete1.setPreco(5.88);
+
+       Sorvete sorvete2 = new Sorvete();
+       sorvete2.setNome("Coco do Nordeste");
+       sorvete2.setSabor("Coco");
+       sorvete2.setPreco(6.70);
+
+       Sorvete sorvete3 = new Sorvete();
+       sorvete3.setNome("Françoa");
+       sorvete3.setSabor("Baquete importado");
+       sorvete3.setPreco(8.25);
+
+       Sorvete sorvete4 = new Sorvete();
+       sorvete4.setNome("Caviar");
+       sorvete4.setSabor("ovas de peixe");
+       sorvete4.setPreco(9.50);
+
+       Sorvete sorvete5 = new Sorvete();
+       sorvete5.setNome("Carvão");
+       sorvete5.setSabor("Carvão Chines");
+       sorvete5.setPreco(6.99);
+
+       System.out.println(sorvete1);
+       System.out.println(sorvete2);
+       System.out.println(sorvete3);
+       System.out.println(sorvete4);
+       System.out.println(sorvete5);
+
+       System.out.println("vou andar à cavalo" );
+       Cavalos cavalo1 = new Cavalos();
+       cavalo1.setNome("Valentina");
+       cavalo1.setRaca("bretão");
+       cavalo1.setEspecialidade("Tração");
+
+       Cavalos cavalo2 = new Cavalos();
+       cavalo2.setNome("Califórnia");
+       cavalo2.setRaca("Puro Sangue Árabe");
+       cavalo2.setEspecialidade("Corrida");
+
+       System.out.println("vou ler um livro" );
+       Livros livros1 = new Livros();
+       livros1.setNome("Queda ao desfiladeiro");
+       livros1.setAutor("Pau-lo tarso");
+       livros1.setGenero("Romance");
+
+       Livros livros2 = new Livros();
+       livros2.setNome("entre o Bull e o El primo");
+       livros2.setAutor("Cerrator");
+       livros2.setGenero("suspense e drama");
+   }
+}
+____________________________________________________________________
+Sorvete.java
+
+package sample.model;
+
+//Classe
+public class Sorvete {
+
+   //atributos
+   private String nome;
+   private String sabor;
+   private double preco;
+
+   public String getNome() {
+       return nome;
+   }
+
+   public void setNome(String nome) {
+       this.nome = nome;
+   }
+
+   public String getSabor() {
+       return sabor;
+   }
+
+   public void setSabor(String sabor) {
+       this.sabor = sabor;
+   }
+
+   public double getPreco() {
+       return preco;
+   }
+
+   public void setPreco(double preco) {
+       this.preco = preco;
+   }
+   @Override
+   public String toString() {
+       return "Sorvete{" +
+               "nome='" + nome + '\'' +
+               ", sabor='" + sabor + '\'' +
+               ", preco=" + preco +
+               '}';
+   }
+}
+____________________________________________________________________
+
+Cavalos.java
+
+package sample.model;
+
+
+//Classe
+public class Cavalos {
+
+   //atributos
+   private String nome;
+   private String raca;
+   private String especialidade;
+
+   public String getNome() {
+       return nome;
+   }
+
+   public void setNome(String nome) {
+       this.nome = nome;
+   }
+
+   public String getRaca() {
+       return raca;
+   }
+
+   public void setRaca(String raca) {
+       this.raca = raca;
+   }
+
+   public String getEspecialidade() {
+       return especialidade;
+   }
+
+   public void setEspecialidade(String especialidade) {
+       this.especialidade = especialidade;
+   }
+
+   @Override
+   public String toString() {
+       return "Cavalos{" +
+               "nome='" + nome + '\'' +
+               ", raca='" + raca + '\'' +
+               ", especialidade='" + especialidade + '\'' +
+               '}';
+   }
+}
+____________________________________________________________________
+Livros.java
+
+package sample.model;
+
+
+//Classe
+public class Livros {
+
+   //atributos
+   private String nome;
+   private String autor;
+   private String Genero;
+
+   public String getNome() {
+       return nome;
+   }
+
+   public void setNome(String nome) {
+       this.nome = nome;
+   }
+
+   public String getAutor() {
+       return autor;
+   }
+
+   public void setAutor(String autor) {
+       this.autor = autor;
+   }
+
+   public String getGenero() {
+       return Genero;
+   }
+
+   public void setGenero(String genero) {
+       Genero = genero;
+   }
+
+   @Override
+   public String toString() {
+       return "Livros{" +
+               "nome='" + nome + '\'' +
+               ", autor='" + autor + '\'' +
+               ", Genero='" + Genero + '\'' +
+               '}';
+   }
+}
+
